@@ -94,25 +94,12 @@ Below is a list of all supported CLI commands:
 | Command Format                                                                 | Description                                       |
 |--------------------------------------------------------------------------------|---------------------------------------------------|
 | `REGISTER <username>`                                                          | Registers a new user.                            |
-|                                                                                | ↳ Returns: `Success` or `Error - user already existing` |
-|                                                                                |                                                   |
 | `CREATE_LISTING <username> '<title>' '<description>' <price> '<category>'`    | Creates a new listing under the specified user.  |
-|                                                                                | ↳ Returns: `<listing_id>` or `Error - unknown user`     |
-|                                                                                |                                                   |
 | `DELETE_LISTING <username> <listing_id>`                                      | Deletes the specified listing.                   |
-|                                                                                | ↳ Returns: `Success`, `Error - listing does not exist`, or `Error - listing owner mismatch` |
-|                                                                                |                                                   |
 | `GET_LISTING <username> <listing_id>`                                         | Retrieves full details of a listing.             |
-|                                                                                | ↳ Returns: `<title>`|`<description>`|`<price>`|`<created_at>`|`<category>`|`<username>` |
-|                                                                                |              or `Error - not found` / `Error - unknown user` |
-|                                                                                |                                                   |
-| `GET_CATEGORY <username> '<category>'`                                        | Retrieves all listings under a category, sorted by most recent. |
-|                                                                                | ↳ Returns: multiple lines of `<title>`|`<description>`|`<price>`|`<created_at>` |
-|                                                                                |              or `Error - category not found` / `Error - unknown user` |
-|                                                                                |                                                   |
+| `GET_CATEGORY <username> '<category>'`                                        | Retrieves all listings under a category, sorted by most recent.                                           
 | `GET_TOP_CATEGORY <username>`                                                 | Returns the most popular category (by listing count). |
-|                                                                                | ↳ Returns: `<category>` (or multiple, alphabetically sorted) |
-|                                                                                |              or `Error - unknown user` or empty string if no listings |
+                                                                               
 
 ---
 
