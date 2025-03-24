@@ -1,4 +1,4 @@
 #!/bin/bash
-python3 cloudshop.py
+python3 main.py
 
 echo "✅ Start running!!"
