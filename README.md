@@ -94,10 +94,10 @@ Below is a list of all supported CLI commands:
 | Command Format                                                                 | Description                                       |
 |--------------------------------------------------------------------------------|---------------------------------------------------|
 | `REGISTER <username>`                                                          | Registers a new user.                            |
-| `CREATE_LISTING <username> '<title>' '<description>' <price> '<category>'`    | Creates a new listing under the specified user.  |
+| `CREATE_LISTING <username> <title> <description> <price> <category>`    | Creates a new listing under the specified user.  |
 | `DELETE_LISTING <username> <listing_id>`                                      | Deletes the specified listing.                   |
 | `GET_LISTING <username> <listing_id>`                                         | Retrieves full details of a listing.             |
-| `GET_CATEGORY <username> '<category>'`                                        | Retrieves all listings under a category, sorted by most recent.                                           
+| `GET_CATEGORY <username> <category>`                                        | Retrieves all listings under a category, sorted by most recent.                                           
 | `GET_TOP_CATEGORY <username>`                                                 | Returns the most popular category (by listing count). |
                                                                                
 
