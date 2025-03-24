@@ -103,11 +103,11 @@ Below is a list of all supported CLI commands:
 |                                                                                | ↳ Returns: `Success`, `Error - listing does not exist`, or `Error - listing owner mismatch` |
 |                                                                                |                                                   |
 | `GET_LISTING <username> <listing_id>`                                         | Retrieves full details of a listing.             |
-|                                                                                | ↳ Returns: `<title>|<description>|<price>|<created_at>|<category>|<username>` |
+|                                                                                | ↳ Returns: `<title>`|`<description>`|`<price>`|`<created_at>`|`<category>`|`<username>` |
 |                                                                                |              or `Error - not found` / `Error - unknown user` |
 |                                                                                |                                                   |
 | `GET_CATEGORY <username> '<category>'`                                        | Retrieves all listings under a category, sorted by most recent. |
-|                                                                                | ↳ Returns: multiple lines of `<title>|<description>|<price>|<created_at>` |
+|                                                                                | ↳ Returns: multiple lines of `<title>`|`<description>`|`<price>`|`<created_at>` |
 |                                                                                |              or `Error - category not found` / `Error - unknown user` |
 |                                                                                |                                                   |
 | `GET_TOP_CATEGORY <username>`                                                 | Returns the most popular category (by listing count). |
