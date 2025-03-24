@@ -80,7 +80,7 @@ Then, You'll now see this prompt:
 #
 ```
 
-🥳 You can start entering commands like:
+**You can start entering commands like:**
 ```bash
 # REGISTER user1
 # CREATE_LISTING user1 'Phone model 8' 'Black color' 1000 'Electronics'
